@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Css Coming From Sass-->
+
+    <link rel="stylesheet/scss" type="text/css" href="sass/style.scss" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/tab-icon.png" />
+
+    <!--BootStrap 4 Css-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/d44b24acad.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>El-Akl</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-storage.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCIQFc0f-NtJy2cLTyOvhweYjaKYod42Bk",
+        authDomain: "foodtogo-e1546.firebaseapp.com",
+        databaseURL: "https://foodtogo-e1546.firebaseio.com",
+        projectId: "foodtogo-e1546",
+        storageBucket: "foodtogo-e1546.appspot.com",
+        messagingSenderId: "874169352518",
+        appId: "1:874169352518:web:1c41e6986362a0d5536547",
+        measurementId: "G-WPDKC3BBE9",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.js"></script>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css"
+    />
+    <script type="text/javascript">
+      // FirebaseUI config.
+      var uiConfig = {
+        signInSuccessUrl: "./food-sec.html",
+        signInOptions: [
+          // Leave the lines as is for the providers you want to offer your users.
+          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+          firebase.auth.EmailAuthProvider.PROVIDER_ID,
+          firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID,
+        ],
+        // tosUrl and privacyPolicyUrl accept either url string or a callback
+        // function.
+        // Terms of service url/callback.
+        tosUrl: "<your-tos-url>",
+        // Privacy policy url/callback.
+        privacyPolicyUrl: function () {
+          window.location.assign("<your-privacy-policy-url>");
+        },
+      };
+
+      // Initialize the FirebaseUI Widget using Firebase.
+      var ui = new firebaseui.auth.AuthUI(firebase.auth());
+      // The start method will wait until the DOM is loaded.
+      ui.start("#firebaseui-auth-container", uiConfig);
+    </script>
+  </head>
+
+  <body>
+    <!-- The surrounding HTML is left untouched by FirebaseUI.
+         Your app may use that space for branding, controls and other customizations.-->
+
+    <header>
+      <div class="overlay"></div>
+      <!-- <video controls="controls" 
+       class="video-stream" 
+       x-webkit-airplay="allow" 
+       data-youtube-id="N9oxmRT2YWw" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="https://www.youtube.com/watch?v=95SNbn340TE" type="video/mp4">
+  </video> -->
+      <video
+        playsinline="playsinline"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+      >
+        <source src="img/FOOD background video.mp4" type="video/mp4" />
+      </video>
+
+      <nav class="navbar navbar-expand-md navbar-light bg-light" id="org-nav">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="img/logo-restaurant.png" alt="" />
+            <span class="logo-txt"> El-Akl</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><i class="fa fa-bars" style="color: white;"></i
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">
+                  Home <i class="fas fa-sign-in-alt"></i
+                ></a>
+              </li>
+              <!-- <li class="nav-item">
+        <a class="btn btn-outline-light " href="./sign-in.html">
+             Order Now
+            </a>
+      </li>
+       </li> 
+      <li class="nav-item">
+        <a class="nav-link ml-3" href="/Arabic.html" style="font-family:'Cairo', sans-serif;">العربية</a>
+      </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container h-100">
+        <div class="d-flex text-center align-items-center">
+          <div class="w-100 text-white">
+            <!-- <h1 class="display-3">Video Header</h1>
+        <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p> -->
+
+            <div class="site-content text-center justify-center">
+              <div class="container-fluid img-contain">
+                <h1  id="new-signIn" data-aos="fade-up">
+                 Please Sign In or Continue as guest
+                </h1>
+
+                <div id="firebaseui-auth-container"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="footer">
+  <footer>
+    <div class="row">
+      <h6> <a href="#" target="_blank">Terms and Conditions</a></h6>
+      <h6> <a href="#" target="_blank">Privacy Policy</a></h6>
+      <h6> <a href="#" target="_blank">Business Services</a></h6> 
+  <h6> <a href="#" target="_blank"> Be A Partner</a>
+  <h6> <a href="#" target="_blank"> Application End User Licence Agreement</a></h6>
+    <h6> <a href="#" target="_blank"> About</a>
+    <h6> <a href="#" target="_blank"> contact us</a>
+  
+    </div>
+
+    <div class="social-links text-center">
+      <a href=""><i class="fab fa-twitter fa-md"></i></a>
+      <a href=""><i class="fab fa-linkedin fa-md"></i></a>
+    </div>
+
+<h5 class="text-center">© Copyright are reserved to El-Akl 2020</h5>
+
+
+
+  </footer>
+</section>
+  </body>
+</html>

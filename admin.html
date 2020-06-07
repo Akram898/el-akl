@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElAkl -Admin</title>
+
+    <!--Css Coming From Sass-->
+
+    <link rel="stylesheet/scss" type="text/css" href="sass/style.scss" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/tab-icon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-storage.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCIQFc0f-NtJy2cLTyOvhweYjaKYod42Bk",
+        authDomain: "foodtogo-e1546.firebaseapp.com",
+        databaseURL: "https://foodtogo-e1546.firebaseio.com",
+        projectId: "foodtogo-e1546",
+        storageBucket: "foodtogo-e1546.appspot.com",
+        messagingSenderId: "874169352518",
+        appId: "1:874169352518:web:1c41e6986362a0d5536547",
+        measurementId: "G-WPDKC3BBE9",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+
+    <script src="./signed-in-in-admin.js"></script>
+    <script src="js/getdata_firebase.js"></script>
+  </head>
+
+  <body id="admin-body">
+
+
+<nav class="navbar navbar-expand-md navbar-light bg-light" id="org-nav-admin">
+  <div class="container">
+  <a class="navbar-brand" href="#"><img src="img/logo-restaurant.png" alt=""> <span class="logo-txt"> El-Akl</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><i class="fa fa-bars" style="color: white;"></i></span>
+  </button>
+  <div class="text-right ml-5" style="font-size: 25px;">
+    Welcome to Admin Page
+  </div>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav  ml-auto">
+     
+      <li class="nav-item">
+        <a class="nav-link" href="./sign-in.html"> Log In <i class="fas fa-sign-in-alt"></i></a>
+       
+      </li> 
+      <li class="nav-item">
+        <a class="btn btn-outline-light " href="./index.html">
+            Home
+            </a>
+      </li>
+       </li> 
+      <li class="nav-item">
+        <a class="nav-link ml-3" href="./arabic.html" style="font-family:'Cairo', sans-serif;">العربية</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<div id="shadow-admin">
+    <!-- <div id="hello_user"></div> -->
+    <div class="container-fluid text-center pt-4">
+      <h1 id="table-title">All Orders جميع الطلبات</h1>
+
+      <table border="2" id="table-data" class="table">
+        <tr>
+          <td class="table-header">Name</td>
+          <td class="table-header">Address</td>
+          <td class="table-header">Mobile</td>
+          <td class="table-header">Order ID</td>
+          <td class="table-header">Status</td>
+        </tr>
+      </table>
+    </div>
+
+    <hr />
+    <div class="container text-center">
+      <div class="card-body">
+        <form id="post-form">
+          <center><h3>Add Item to menu</h3></center>
+          <textarea
+            id="post"
+            class="form-control"
+            placeholder="What do you want to add..."
+          ></textarea>
+          <input
+            class="form-control"
+            type="text"
+            placeholder="food Item Name"
+          />
+          <input class="form-control" type="text" placeholder="Price" />
+          <label for="image">The Food's Photo</label>
+          <input
+            type="file"
+            class="form-control"
+            id="image"
+            accept="images/*"
+          />
+          <div class="text-center">
+            <button type="button" class="btn btn-success" onclick="upload()">
+              Upload
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="row mt-4" id="posts"></div>
+    </div>
+</div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Css Coming From Sass-->
+
+    <link rel="stylesheet/scss" type="text/css" href="sass/style.scss" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/tab-logo.png" />
+
+    <!--BootStrap 4 Css-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/d44b24acad.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Scroll Reveal-->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal({ reset: true });
+  ScrollReveal().reveal('.headline', { delay: 4000 });
+</script> -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    
+
+    <title>BookTheChefs</title>
+  </head>
+
+  <body data-spy="scroll" data-target="#navbarResponsive" id="restaurant-body">
+    
+   
+    
+    <section id="restaurant-home-section">
+      <section id="shadow">
+       <div class="container-fluid" id="top-nav">
+      <div class="row">
+<div class="col-md-6 text-left">
+  <span class="fine "> Fine Dining At Your Fingertips</span>
+
+</div>
+<div class="col-md-6 text-right finedine">
+  
+    <a href="#"> Log In <i class="fas fa-sign-in-alt"></i></a> | <a class="signup" href="#">Sign Up <i class="fas fa-sign-in-alt"></i></i></a>
+ 
+
+</div>
+      </div>
+
+    </div>  
+
+
+<nav class="navbar navbar-expand-md navbar-light bg-light" id="org-nav">
+  <div class="container">
+  <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""> <span class="logo-txt"> BookTheChefs</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><i class="fa fa-bars" style="color: white;"></i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav  ml-auto">
+      <li class="nav-item ">
+        <a class="nav-link " href="/index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/restaurants.html">Restaurants</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/busnisses.html">Businesses</a>
+      </li>
+     
+      <li class="nav-item">
+        <a class="nav-link" href="/support_help.html" target="_blank">Support</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-outline-light " href="/orders.html">
+             Place an order
+            </a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+   
+
+      
+      <!--***********************************Start BAnner Section*******************************************************-->
+  
+        <div class="site-content text-center justify-center">
+                       <div class="container-fluid img-contain" >
+        <div class="row">
+          <div class="col-md-6 text-left">
+            <h1 class="site-title headline" id="fineh1" data-aos="fade-up">
+              BooktheChefs helps fine dining restaurants of any 
+              size and scale access the office and at home
+               consumer market whilst maintaining the high standards and 
+               excellence of their .
+            </h1>
+            </div>
+          
+<div class="col-md-6 text-center col-form">
+           
+    <form class="needs-validation" id="restaurant-form" action="/form.html" novalidate>
+
+<div class="form-group">
+    <h1>Get Started With BookTheChefs Today!</h1>
+    <input type="text" id="restaurant-name" class="form-control input1" placeholder="Restaurant Name" required>
+    <div class="invalid-feedback">Please Enter Restaurant Name</div>
+  </div>
+
+  <div class="form-group">
+    <input type="text" id="rest-address" class="form-control input1" id="formGroupExampleInput" placeholder="Restaurant Address" required>
+    <div class="invalid-feedback">Please Enter An Address</div>
+  </div>
+
+  <div class="form-group ">
+    <input type="email" id="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="E-mail" required>
+    <!-- <small id="emailHelp" class="form-text text-muted text-left" style="font-size: 11px;">We'll never share your email with anyone else.</small> -->
+    <div class="invalid-feedback">Please Enter A Valid E-mail</div>
+  </div>
+
+  <div class="form-group">
+    
+    <input type="text" id="contact-num" class="form-control input1" id="formGroupExampleInput" placeholder="Phone" required>
+    <div class="invalid-feedback">Please Enter A Contact Number</div>
+  </div>
+  
+
+<div class="form-group text-center" id="start-btn" >
+  <button type="submit" class="btn">Get Started</button>
+  </div>
+</form>
+
+            </a>
+</div>
+
+</div>
+
+
+
+            <div class="down-btn">
+            <a class="btn btn-down btn-outline-light btn-lg" href="#restaurant-portfolio">
+            <i class="fas fa-angle-down fa-lg"></i>
+            </a>
+</div>
+            
+             
+   
+           
+           
+      </div>
+    </div>
+</section>
+    </section>
+    <!--***********************************Start About Section*******************************************************-->
+
+    <section id="restaurant-portfolio" class="section">
+      <div class="container-fluid row">
+       
+        <div class="col-md-6 text-right img-class" data-aos="fade-up"  data-aos-duration="2000">
+ <img src="img/chef 6.jpg" alt="">
+        </div>
+
+         <div class="col-md-6 text-left pl-5" data-aos="fade-down"  data-aos-duration="2000">
+
+<h1>Grow Your Business</h1>
+<hr>
+<p>Connecting customers to nearby fine dining establishments and great local chefs in a way that saves them time and gives them a comprehensive selection of premium restaurants available on BooktheChefs within each neighborhood. These two factors unlock BooktheChefs's equation for local commerce success</p>
+    <a href="/orders.html" target="_blank" class="btn btn-primary btn-lg">See How</a>    
+</div>
+      </div>
+    </section>
+
+    <!--***********************************End ABout Section*******************************************************-->
+
+    <section id="services-section-restaurant" class="offset">
+      <div class="container-fluid">
+        <div class="row">
+          
+          <div class="col-md-6 text-left pl-5" data-aos="fade-right">
+            <h1>Reach new patrons</h1>
+            <hr>
+            <p>Also in our unified platform it is a key part of our model that restaurant partners have enough control, not only over being able to speak with their customers, but control for the look and feel of their storefront. That's the sweet spot we're looking to find, which we think is a win for fine dining patrons and our restaurant partners. We do this through our partner portal, our shared marketing tools, promotional efforts and many other initiatives</p>
+         <a href="/orders.html" target="_blank"  class="btn btn-primary btn-lg">Learn More</a>
+          </div>
+<div class="col-md-6 text-center" data-aos="fade-left">
+<img src="img/BTC3.jpg" alt="">
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--***********************************عAbout*******************************************************-->
+
+
+
+
+    <section id="restaurant-portfolio" class="section">
+      <div class="container-fluid row">
+       
+        <div class="col-md-6 text-right img-class" data-aos="fade-left"  data-aos-duration="2000">
+ <img src="img/BTC10.jpg" alt="">
+        </div>
+
+         <div class="col-md-6 text-left pl-5" data-aos="fade-right"  data-aos-duration="2000">
+
+<h1>Partner with BookTheChefs</h1>
+<hr>
+<p>Partner with BooktheChefs and gain a competitive, technological edge, that can be driving your business ' profitability and providing a more personalized way to connect with your customers via App and online</p>
+    <a href="/orders.html" target="_blank" class="btn btn-primary btn-lg">Learn More</a>    
+</div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section id="howitworks">
+      <div class="container-fluid text-center">
+        <h2>3 simple steps to get started</h2>
+        <div class="row">
+          
+          <div class="col-md-4 text-center" data-aos="fade-right"  data-aos-duration="1500">
+          
+             <div class="how-item">
+            <h1 class="h1-big-text">
+             1
+            </h1>
+           <img src="img/tell-us.png" alt="">
+            <p>Tell us about your restaurant
+                         </p>
+        </div>
+        
+              <div class="arrow">    <i class="fas fa-arrow-right" ></i></div>
+          </div>
+
+
+         
+           <div class="col-md-4 text-center" data-aos="fade-down"  data-aos-duration="2000">
+            <div class="how-item">
+            <h1 class="h1-big-text">
+             2
+            </h1>
+           <img src="img/menu.png" alt="">
+            <p>
+                    Upload your menu     </p>
+          
+             </div>
+             <div class="arrow">    <i class="fas fa-arrow-right" ></i></div>
+         
+          </div>
+        
+           <div class="col-md-4 text-center" data-aos="fade-left"  data-aos-duration="2800">
+           <div class="how-item">
+            <h1 class="h1-big-text">
+             3
+            </h1>
+           <img src="img/delivery.png" alt="">
+            <p>
+                   You cook, customer picks up      </p>
+          
+             </div>
+          </div>
+
+          
+        </div>
+      </div>
+      <div class="up-btn text-center">
+            <a class="btn btn-up btn-outline-light btn-lg" href="#restaurant-home-section">
+            <i class="fas fa-angle-up fa-lg"></i>
+            </a> </div>
+    </section>
+
+    <!--***********************************End عAbout*******************************************************-->
+
+    <!--************Footer***************************-->
+
+<section id="footer">
+  <footer>
+    <div class="row">
+      <h6> <a href="#" target="_blank">Terms and Conditions</a></h6>
+      <h6> <a href="#" target="_blank">Privacy Policy</a></h6>
+      <h6> <a href="#" target="_blank">Business Services</a></h6> 
+  <h6> <a href="#" target="_blank"> Be A Partner</a>
+  <h6> <a href="#" target="_blank"> Application End User Licence Agreement</a></h6>
+    <h6> <a href="#" target="_blank"> About</a>
+    <h6> <a href="#" target="_blank"> contact us</a>
+  
+    </div>
+
+    <div class="social-links text-center">
+      <a href=""><i class="fab fa-twitter fa-md"></i></a>
+      <a href=""><i class="fab fa-linkedin fa-md"></i></a>
+    </div>
+
+<h5 class="text-center">© Copyright are reserved to BookTheChefs 2020</h5>
+
+
+
+  </footer>
+</section>
+
+<div class=’cookie-banner’ style='display: none'>
+<p>
+    By using our website, you agree to our 
+    <a href=’insert-link’>cookie policy</a>
+  </p>
+</div>
+
+
+
+    <!--************Footer***************************-->
+
+
+
+
+
+    <!--JavaScrip Main-->
+    <script src="js/main.js"></script>
+
+    <!--BootStrap 4 JavaScrip-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script>
+if (localStorage.getItem('cookieSeen') != 'shown') {
+  $('.cookie-banner').delay(2000).fadeIn();
+  localStorage.setItem('cookieSeen','shown')
+};
+$('.close').click(function() {
+  $('.cookie-banner').fadeOut();
+})
+</script>
+  </body>
+</html>

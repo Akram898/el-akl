@@ -1,0 +1,305 @@
+<html>
+<head>
+  <meta charset="utf-8">
+ 
+
+  <link rel="stylesheet" href="css/food-sec.css">
+
+<!--Css Coming From Sass-->
+
+    
+    <link rel="icon" href="img/tab-icon.png" />
+
+    <!--BootStrap 4 Css-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/d44b24acad.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Scroll Reveal-->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal({ reset: true });
+  ScrollReveal().reveal('.headline', { delay: 4000 });
+</script> -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    
+
+    <title>El-Akl</title>
+
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-storage.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCIQFc0f-NtJy2cLTyOvhweYjaKYod42Bk",
+        authDomain: "foodtogo-e1546.firebaseapp.com",
+        databaseURL: "https://foodtogo-e1546.firebaseio.com",
+        projectId: "foodtogo-e1546",
+        storageBucket: "foodtogo-e1546.appspot.com",
+        messagingSenderId: "874169352518",
+        appId: "1:874169352518:web:1c41e6986362a0d5536547",
+        measurementId: "G-WPDKC3BBE9",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+<script>
+//        function signOut() {
+//   auth.signOut;
+//   window.location.href = "./index.html";
+// }
+      firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+          var helloUser = document.getElementById("hello_user");
+          helloUser.innerHTML = "<h4>Hello <span style='color: red'> " + user.displayName + "</span> , Welcome to Al Akl</h4>" ;
+        } else {
+          helloUser.innerHTML = "<h1>not signed in</h1>";
+        }
+      });
+
+    
+
+    </script>
+
+<script src="./signed-in-in.js"></script>
+
+
+</head>
+<body>
+
+  <div>
+ <nav class="navbar navbar-default fixed-top">
+
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><img src="img/logo-restaurant.png" alt=""> </span>
+     
+        </a>
+        <div id="hello_user"></div>
+      </div>
+    </div>
+    <li class="nav-item" style="list-style: none;">
+        <a style="text-decoration: none;
+        list-style: none;" class="btn btn-outline-light " href="./index.html">
+             Home
+            </a>
+      </li>
+  </nav> 
+
+
+
+
+
+
+  <div class="container" style="margin: 10%;">
+    <div class="row" >
+      <div class="col col-sm-9 col-xs-6">
+        <h1 style="font-size: 25px; padding-bottom: 2%;" id="line">Choose your favorite food</h1>
+        <div class="row" id="thefood" >
+     <div class="col col-xs-12 col-md-6 col-lg-4 item">
+            <div class='img-container'>
+              <img src="img/shwarma.png">
+            </div>
+            <h2>Shawerma شاورمة</h2>
+            <p>Restaurant name اسم المطعم</p>
+            <p class="price"> 9.5 LE</p>
+          </div>
+          <div class="col col-xs-12 col-md-6 col-lg-4 item">
+            <div class='img-container'>
+              <img src="img/grilled-chicken.jpg">
+            </div>
+            <h2>Chicken</h2>
+            <p>Restaurant name اسم المطعم</p>
+            <p class="price"> 10.99 LE</p>
+          </div>
+          <div class="col col-xs-12 col-md-6 col-lg-4 item">
+            <div class='img-container'>
+              <img src="img/foul-mudammas.jpg">
+            </div>
+            <h2>Foul فول</h2>
+            <p>Restaurant name اسم المطعم</p>
+            <p class="price"> 4.99 LE</p>
+          </div>
+          <div class="col col-xs-12 col-md-6 col-lg-4 item">
+            <div class='img-container'>
+              <img src="img/veg.jpg">
+            </div>
+            <h2>Vegetarian اكل نباتي</h2>
+            <p>Restaurant name اسم المطعم</p>
+            <p class="price"> 10.99 LE</p>
+          </div>
+
+
+<div class="col col-xs-12 col-md-6 col-lg-4 item">
+            <div class='img-container'>
+              <img src="img/sweets.jpg">
+            </div>
+            <h2>Sweets</h2>
+            <p>Restaurant name اسم المطعم</p>
+            <p class="price"> 15 LE</p>
+          </div>
+
+
+
+<div class="col col-xs-12 col-md-6 col-lg-4 item">
+            <div class='img-container'>
+              <img src="img/coffee.jpg">
+            </div>
+            <h2>Coffee</h2>
+            <p>Restaurant name اسم المطعم</p>
+            <p class="price"> 10 LE</p>
+          </div>
+
+
+
+
+          
+        </div>
+      </div>
+      <div class="col col-sm-3 col-xs-6" style="background-color: rgb(255, 242, 252);">
+      <div id = 'cart-container' data-spy="affix" data-offset-top="10">
+        <h1 style="font-size: 25px;">Shopping Cart <i class="fas fa-shopping-cart" style="color: #9e00c5;"></i> <span class="badge" id='cartItems'></span></h1>
+        <div class="cart" id = 'cart'>
+        So lonely here, add something
+        </div>
+            <div id = 'prices'></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Complete order</h4>
+      </div>
+      <div class="modal-body">
+        <div class = 'row'>
+            <div class = 'col-xs-12' id = 'cartContentsModal'> </div>
+        </div>
+        <div class = 'row'>
+            <div class = 'col-xs-12' id = 'cartForm'> 
+            <!-- FORM -->
+                <form>
+                    <div class="form-group">
+                        <label for="formName">Name</label>
+                        <input type="text" class="form-control" id="formName" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formAddress">Address</label>
+                        <input type="text" class="form-control" id="formAddress" placeholder="Your address" required>
+                    </div>
+
+ <div class="form-group">
+                        <label for="formAddress">Phone</label>
+                        <input type="text" class="form-control" id="formPhone" placeholder="Your Phone Number" required>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer centered">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id='submit'>Complete order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center m-0 p-0" id="banner">
+  <div class="shadow">
+  <h1>
+Have The Best Food with the best Prices
+  </h1>
+  <p>
+Lorem ipsum dolor sit amet consectetur adipisicing.
+  </p>
+  <div class="btn-up">
+            <a class="btn btn-up-a btn-outline-light btn-lg" href="#line">
+            <i class="fas fa-angle-up fa-lg"></i>
+            </a>
+</div>
+
+  </div>
+</div>
+
+<section id="footer">
+  <footer>
+    <div class="row">
+      <h6> <a href="#" target="_blank">Terms and Conditions</a></h6>
+      <h6> <a href="#" target="_blank">Privacy Policy</a></h6>
+      <h6> <a href="#" target="_blank">Business Services</a></h6> 
+  <h6> <a href="#" target="_blank"> Be A Partner</a>
+  <h6> <a href="#" target="_blank"> Application End User Licence Agreement</a></h6>
+    <h6> <a href="#" target="_blank"> About</a>
+    <h6> <a href="#" target="_blank"> contact us</a>
+  
+    </div>
+
+    <div class="social-links text-center">
+      <a href=""><i class="fab fa-twitter fa-md"></i></a>
+      <a href=""><i class="fab fa-linkedin fa-md"></i></a>
+    </div>
+
+<h5 class="text-center">© Copyright are reserved to El-Akl 2020</h5>
+
+
+
+  </footer>
+</section>
+
+
+      <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    
+
+
+        <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+
+
+<script src="js/food-sec.js"></script>
+<script src="js/form-firebase.js"></script>
+    
+<!--BootStrap 4 JavaScrip-->
+
+   
+
+</body>
+</html>
