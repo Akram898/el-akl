@@ -1,0 +1,47 @@
+#logo-img {
+  padding: 0 !important;
+  border: 0px;
+}
+#chefs-home-sec {
+  nav {
+    background-color: #f7f7f7 !important;
+    .logo-txt {
+      color: $primary-color !important;
+    }
+    a {
+      color: $primary-color !important;
+      &:hover {
+        color: wheat !important;
+      }
+    }
+    .chefs-btn {
+      background-color: #e66d9f;
+    }
+    .btn {
+      color: $primary-color !important;
+      &:hover {
+        color: $primary-color !important;
+      }
+    }
+  }
+
+  h1 {
+    padding-top: 5%;
+    color: $primary-color;
+  }
+  img {
+    margin: 5%;
+    border: 2px $primary-color solid;
+    box-shadow: 0.1rem 0.1rem 0.8rem $primary-color;
+    &:hover {
+      opacity: 0.5;
+      transition: all 0.6s ease-in;
+    }
+  }
+}
+#chefs {
+  a {
+    font-family: "Courgette", cursive;
+    color: $primary-color;
+  }
+}

@@ -1,0 +1,83 @@
+#admin-body {
+  background-image: url("../img/chick-table.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  #shadow-admin {
+    background: rgba(185, 166, 182, 0.6);
+    z-index: -2;
+  }
+  #org-nav-admin {
+    font-family: "Salsa", cursive, "Lalezar";
+    transition: all 0.4s;
+    background-color: rgb(223, 182, 217) !important;
+    li {
+      padding-left: 10px;
+    }
+    .nav-link {
+      letter-spacing: 1px;
+      font-size: 15px;
+
+      color: #352c2ca6;
+      &:active,
+      &:hover {
+        color: #fff;
+      }
+    }
+    .btn {
+      color: #e0e0e0a6;
+      background-color: $primary-color;
+      color: #fff;
+      border: 1px solid $primary-color;
+      padding: 7px 11px;
+      border-radius: 20px;
+      &:hover {
+        background-color: $primary-color-dark !important;
+        color: white !important;
+      }
+    }
+  }
+  .navbar-brand {
+    img {
+      width: 35px;
+      padding-bottom: 19px;
+    }
+    .logo-txt {
+      font-family: "Courgette", cursive, "Lalezar";
+      color: whitesmoke;
+      font-size: 25px;
+      padding: 800px 0 0 7px !important;
+      text-align: center;
+    }
+  }
+
+  table {
+    margin: 5% 0 5% 26%;
+    width: 50%;
+    border: double;
+    background: rgb(216, 208, 208);
+  }
+  //   td {
+  //     padding: 2%;
+  //     border: 1px solid;
+  //   }
+  .table-header {
+    background-color: $primary-color;
+  }
+  td {
+    color: rgb(66, 62, 62);
+    font-weight: bold;
+  }
+
+  form {
+    margin: 5% 9%;
+    border: $primary-color-dark 2px solid;
+    padding: 5%;
+    background: rgba($primary-color-dark, 0.5);
+
+    input {
+      margin: 5% 0 5% 0;
+      background: rgba(255, 255, 158, 0.5);
+    }
+  }
+}

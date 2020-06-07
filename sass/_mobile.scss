@@ -1,0 +1,158 @@
+//**************Wide Screens********************
+@include mediaXlg {
+  .projects {
+    grid-template-columns: (4, 1fr);
+  }
+}
+
+//***************Desktops & Laptops******************
+@include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+//*****************TABLETS*********************
+@include mediaMd {
+  .card-deck {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)) !important;
+    grid-gap: 0.8rem;
+  }
+  #services-section-about {
+    .the-left {
+      width: 100%;
+      padding: 0 0 0 4%;
+    }
+
+    .bg-image {
+      height: 450px;
+      width: 100%;
+    }
+  }
+
+  #site-services #line {
+    font-size: 49px;
+    padding: 9% 0 2% 0;
+  }
+}
+//*************************Mobiles************************
+@include mediaSm {
+  .card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    grid-gap: 0.8rem;
+  }
+
+  #top-na {
+    .finedine {
+      padding-left: 40px !important;
+      text-align: center !important;
+    }
+  }
+  .restaurant-form .btn {
+    padding: 8px 30% !important;
+    text-align: center;
+  }
+  .btn-up {
+    visibility: hidden;
+  }
+
+  #footer {
+    text-align: left;
+    h6 {
+      font-size: 15px;
+      padding: 7px;
+    }
+  }
+
+  #fineh1 {
+    padding-bottom: 10%;
+    font-size: 29px;
+  }
+
+  #orders-main {
+    .grade {
+      visibility: hidden;
+    }
+    img {
+      width: 250px;
+      height: 250px;
+    }
+    h1 {
+      padding-left: 0 !important;
+    }
+
+    .timings {
+      padding-left: 0;
+    } //restaurant-desc
+    p {
+      padding-left: 0;
+    }
+    .firs-taste {
+      margin-left: 0 !important;
+    }
+  }
+
+  #chefs-home-sec {
+    align-items: center;
+    text-align: center;
+    h1 {
+      font-size: 29px;
+      display: block;
+      right: 0;
+      position: relative;
+      margin-left: 0;
+    }
+  }
+  #howitworks {
+    margin: 0 auto;
+    .how-item {
+      display: block;
+      margin: 0 auto 0 -5%;
+    }
+    .arrow {
+      visibility: hidden;
+    }
+  }
+  #restaurant-body #restaurant-form {
+  }
+  #start-btn {
+    padding: 15px 28px;
+    margin-right: 20%;
+  }
+  #about-body {
+    #news-letter {
+      .input-group {
+        margin: 8% 0 8% 5%;
+        width: 300px;
+      }
+      input {
+        font: 10px;
+      }
+    }
+  }
+
+  #businesses-body {
+    #businesses-first-section,
+    .right-pic {
+      justify-content: center;
+      .more-info {
+        padding: 15% 10% 15% 15%;
+      }
+      img {
+        width: 310px;
+        height: 370px;
+      }
+    }
+  }
+
+  #businesses-body .section-2 {
+    p {
+      width: 100%;
+    }
+    #mob-para {
+      width: 299px;
+    }
+  }
+}

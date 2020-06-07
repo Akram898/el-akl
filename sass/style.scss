@@ -1,0 +1,417 @@
+@import "config";
+@import "restaurants";
+@import "orders";
+@import "custsupport";
+@import "about";
+@import "businesses";
+@import "chefs";
+@import "form";
+@import "cart";
+@import "leon";
+@import "cart-j2";
+@import "admin";
+html {
+  scroll-behavior: smooth;
+  font-family: "Libre Franklin", sans-serif;
+
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  color: #505962;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*---------- Navigation---------------*/
+#top-nav {
+  color: wheat;
+  font-size: 14px;
+  padding: 4px;
+  background-color: $primary-color;
+
+  .fine {
+    padding-left: 19%;
+    color: white;
+  }
+  a {
+    padding-right: 25px;
+    color: white;
+    &:hover {
+      color: wheat;
+    }
+  }
+  .signup {
+    padding: 0 150px 0 25px;
+  }
+}
+//*************************
+.active {
+  color: white !important;
+}
+.btn {
+  text-shadow: 0.1rem 0.1rem 0.7rem black !important;
+  text-align: center;
+
+  &:hover {
+    background-color: #fff !important;
+    transition: all 0.6s !important;
+    color: $primary-color !important;
+    text-shadow: 0.1rem 0.1rem 0.7rem black !important;
+  }
+}
+//*************Second Nav************
+#org-nav {
+  font-family: "Salsa", cursive, "Lalezar";
+  transition: all 0.4s;
+  background-color: rgba(0, 0, 0, 0) !important;
+  li {
+    padding-left: 10px;
+  }
+  .nav-link {
+    letter-spacing: 1px;
+    font-size: 15px;
+
+    color: #e0e0e0a6;
+    &:active,
+    &:hover {
+      color: #fff;
+    }
+  }
+  .btn {
+    color: #e0e0e0a6;
+    background-color: $primary-color;
+    color: #fff;
+    border: 1px solid $primary-color;
+    padding: 7px 11px;
+    border-radius: 20px;
+    &:hover {
+      background-color: $primary-color-dark !important;
+      color: white !important;
+    }
+  }
+}
+.navbar-brand {
+  img {
+    width: 35px;
+    padding-bottom: 19px;
+  }
+  .logo-txt {
+    font-family: "Courgette", cursive, "Lalezar";
+    color: whitesmoke;
+    font-size: 25px;
+    padding: 800px 0 0 7px !important;
+    text-align: center;
+  }
+}
+
+//-----------End NavBar-------------------------------------
+
+//-----------Banner-------------------------------------
+
+.text-primary {
+  color: $primary-color;
+}
+#home {
+  background: url(../img/nutrition.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  font-family: "Salsa", cursive;
+}
+#shadow {
+  background: rgba(13, 14, 15, 0.5);
+}
+// .img-contain {
+//   background: rgba(13, 14, 15, 0.5);
+// }
+
+@keyframes yourAnimation {
+  0% {
+    transform: rotate(0) translateY(-40%);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) translateY(0);
+    opacity: 01;
+  }
+}
+.site-content {
+  .site-title {
+    animation: yourAnimation 1s forwards 0.5s ease-in;
+    font-size: 40px;
+    font-family: "Salsa", cursive, "Lalezar";
+    line-height: 40px;
+    color: #fff;
+    padding-top: 15%;
+    margin-bottom: 8%;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-shadow: 0.1rem 0.1rem 0.7rem black;
+  }
+
+  .btn-order {
+    animation: yourAnimation 2s forwards 0s ease;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 0;
+    font-family: "Salsa", cursive, "Lalezar";
+    letter-spacing: 5;
+    text-shadow: 0.1rem 0.1rem 0.7rem black;
+    text-align: center;
+    padding: 10px 25px;
+    margin-bottom: 12%;
+  }
+
+  .btn-down {
+    margin: 0 0 2% 0;
+    border-radius: 50%;
+  }
+}
+
+//===============End Banner-----------------------------
+
+// ----------------------Start Portfolio Page-----------------------------
+
+#site-services {
+  // background-image: url("../img/download.jpg");
+  // background-repeat: no-repeat;
+  background-image: linear-gradient(#ffffff, #f7f7f7);
+
+  padding: 5%;
+  a {
+    color: $secondary-color;
+  }
+  h1 {
+    font-family: "Permanent Marker", cursive, "Lalezar";
+    color: $primary-color;
+    padding: 3% 0 1% 0;
+    font-size: 80px;
+    font-weight: 50%;
+  }
+  h2 {
+    padding: 0 0 5% 0;
+    font-family: "Salsa", cursive, "Lalezar";
+  }
+  .card {
+    padding: 2% 2%;
+    box-shadow: 0.1rem 0.1rem 0.5rem;
+    border-radius: 15px;
+    background: #e0e8f0;
+
+    img {
+      width: 200px;
+      height: 150px;
+      padding: 6% 0 0 0;
+      align-items: center !important;
+    }
+
+    h5 {
+      padding: 5% 0 2% 0;
+      font-size: 27px;
+      color: $primary-color;
+      font-family: "Salsa", cursive, "Lalezar";
+    }
+    p {
+      font-weight: 450;
+      font-size: 20px;
+    }
+    &:hover {
+      background-color: $primary-color-light;
+      transition: ease 0.4s;
+      h5 {
+        color: white;
+      }
+    }
+  }
+}
+
+// ----------------------Start Portfolio Page-----------------------------
+#services-section-about {
+  margin: 0 0;
+  padding: 0 0;
+  .the-left {
+    width: 28%;
+    padding: 0 0 0 4%;
+  }
+  h1 {
+    padding: 26% 0 1% 8%;
+    font-size: 55px;
+    font-family: "Salsa", cursive, "Lalezar";
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+  }
+  hr {
+    border-top: 2px solid $primary-color;
+    margin-left: 8%;
+    padding-bottom: 2%;
+    width: 20%;
+  }
+  p {
+    padding-bottom: 4%;
+    padding-left: 8%;
+    color: #b3aaaa;
+    font-weight: 400;
+    font-size: 15px;
+    width: 400px;
+  }
+  #para-team {
+    font-size: 30px;
+    font-family: "Salsa", cursive, "Lalezar";
+    padding-left: 8%;
+    padding-bottom: 19%;
+  }
+  .bg-image {
+    background: url("../img/about-img/bg_2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+  }
+  h2 {
+    padding: 20% 0 5% 0;
+  }
+}
+
+//*****************End curosel****************************
+
+footer {
+  width: 100%;
+  margin: 0;
+  padding: 8% 5% 4% 5%;
+  background: #1a1a1a;
+  color: #fff;
+  h6 {
+    padding-left: 4%;
+    font-weight: 200;
+    font-size: 15px;
+    color: #fff;
+  }
+  a {
+    color: rgb(219, 219, 219);
+    &:hover {
+      text-decoration: none;
+
+      color: #fff;
+    }
+  }
+  i {
+    margin: 4% 5px 1% 0;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #333333;
+    background-color: #fff;
+    &:hover {
+      color: #fff;
+      background-color: $primary-color;
+      @include easeOut;
+    }
+  }
+  h5 {
+    font-size: 15px;
+    padding-top: 2%;
+
+    font-weight: 40;
+  }
+}
+
+@import "mobile";
+
+//--------------Chef Gallery**********************
+
+// .img-contain-chefs {
+//   .btn {
+//     margin-bottom: 2%;
+//   }
+// }
+// #chefs {
+//   border: #f7f7f7 4px solid;
+//   img {
+//     border: 5px solid $primary-color;
+
+//     &:hover {
+//       opacity: 0.5;
+//       @include easeOut;
+//     }
+//   }
+// }
+
+#new-signIn {
+  animation: yourAnimation 1s forwards 0.5s ease-in;
+  font-size: 40px;
+  font-family: "Salsa", cursive;
+  line-height: 40px;
+  color: #fff;
+  padding: 5% 0 1.5% 0;
+
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-shadow: 0.1rem 0.1rem 0.7rem black;
+}
+#firebaseui-auth-container {
+  padding-bottom: 10%;
+}
+
+header {
+  position: relative;
+  background-color: black;
+
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url("../img/nutrition.jpg") black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}

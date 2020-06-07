@@ -1,0 +1,49 @@
+html,
+body {
+  padding: 0s;
+  margin: 0;
+  height: 100%;
+  margin: 0;
+}
+
+.content {
+  margin: 11% 30% 8% 30%;
+  min-height: calc(100vh - 70px);
+
+  overflow: auto;
+  position: relative;
+}
+
+.content:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background: url("../img/home-bg.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+  -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  -o-filter: blur(20px);
+  -ms-filter: blur(20px);
+  filter: blur(20px);
+}
+
+form {
+  border: 4px solid #fff;
+  padding: 5%;
+  background-color: wheat;
+  border-radius: 10%;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}

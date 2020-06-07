@@ -1,0 +1,60 @@
+[14328:4592:2020-5-22 15:30:16.474] Main Start
+[14328:4592:2020-5-22 15:30:16.474] Command line:"G:\?????\Paid Jobs - Hopefully\bookTheChef-master\img\Zoom_cm_fo42lnktZ9vvrZo4_mupAldu6rrzIpGdaaiwDQgwtOTqvJqV-JAX9w_k355d59896ed962a7_.exe"  Instance:0x3F0000 Show State:1
+[14328:4592:2020-5-22 15:30:16.752] G:\
+[14328:7360:2020-5-22 15:30:16.752] [process_requst] start, url:https://us04web.zoom.us/conf/launch
+[14328:7360:2020-5-22 15:30:18.36] [req_state_read_status_code] zHttpQueryInfo complete, status:200
+[14328:7360:2020-5-22 15:30:18.36] [req_state_read_status_code] zHttpQueryInfo complete, status:200 Error: 0
+[14328:7360:2020-5-22 15:30:18.36] [log_response_content] Content length (1048576 as unknown):2190 , Total read: 2190 , Error No: 0 , Status code: 200
+[14328:7360:2020-5-22 15:30:18.51] [log_response_content] header:
+[14328:7360:2020-5-22 15:30:18.51] HTTP/1.1 200 
+Date: Fri, 22 May 2020 11:30:18 GMT
+Content-Type: text/plain;charset=utf-8
+Content-Length: 2190
+Connection: keep-alive
+Server: ZOOM
+x-zm-trackingid: WEB_42a072ff23255b07b5523f4459b957ec
+Set-Cookie: zm_gnl_guid=ab1cgGWKZRtkVpIcRtXsEt1UNdT0ygl1YQDg7EIew+0wslWGliYQtWqwkOdx0P6e7n2b; Domain=.zoom.us; Path=/; Secure; HttpOnly
+Set-Cookie: zm_gnl_ruid=FPrNE95XSHaDUvscCe-0cg; Domain=.zoom.us; Path=/; Secure; HttpOnly
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src https://*.zoom.us https://zoom.us https://*.zoom.com.cn https://zoom.com.cn https://d17o6on0vd932d.cloudfront.net blob: 'self'; script-src 'unsafe-eval' 'unsafe-inline' blob: about: https://ajax.aspnetcdn.com/ajax/3.5/MicrosoftAjax.js https://appsforoffice.microsoft.com https://assets.zendesk.com https://autocomplete.demandbase.com https://cdn-javascript.net https://cdn-js.net https://cdn.wootric.com https://cdncache-a.akamaihd.net https://connect.facebook.net https://consent.trustarc.com https://d.adroll.mgr.consensu.org https://d2b9h3rz4xo53c.cloudfront.net https://d24cgw3uvb9a9h.cloudfront.net https://googleads.g.doubleclick.net https://pi.pardot.com https://ruanshi2.8686c.com https://s.dcbap.com https://s.ytimg.com https://s3.amazonaws.com https://scout-cdn.salesloft.com https://sealserver.trustwave.com https://secure-cdn.mplxtms.com https://serve2.cheqzone.com https://snap.licdn.com https://sp.analytics.yahoo.com https://static.zdassets.com https://static2.sharepointonline.com https://tag.demandbase.com https://tpc.googlesyndication.com https://tracking.g2crowd.com https://trk.techtarget.com https://www.comeet.co https://www.dropbox.com https://www.google-analytics.com https://www.googleadservices.com https://www.googletagmanager.com https://www.gstatic.com https://www.youtube.com https://d17o6on0vd932d.cloudfront.net https://*.ada.support https://*.adroll.com https://*.google.com https://*.hotjar.com https://*.linkedin.com https://*.zoom.us https://*.zoomcloudpbx.com https://*.zoomus.cn https://*.zopim.com https://adroll.com https://google.com https://linkedin.com https://zoom.us https://zoom.com.cn https://*.zoom.com.cn 'self'; img-src https: http: about: blob: data: 'self'; style-src https: safari-extension: chrome-extension: 'unsafe-inline' data: 'self'; font-src https: safari-extension: chrome-extension: blob: data: 'self'; connect-src * about: blob: data: 'self'; media-src * rtmp: blob: data: 'self'; frame-src https: ms-appx-web: zoommtg: zoomus: wvjbscheme: data: 'self'
+Set-Cookie: zm_aid=""; Domain=.zoom.us; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: zm_haid=""; Domain=.zoom.us; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: cred=B17E5C1F7C8065053000E9B2700C6E1F; Path=/; Secure; HttpOnly
+Set-Cookie: _zm_page_auth=us04_c_GC1zIY8uToK1eBrpDy7rQA; Domain=.zoom.us; Path=/; Secure; HttpOnly
+p3p: CP="NOI ADM DEV PSAi COM NAV OUR OTR STP IND DEM"
+Set-Cookie: _zm_ssid=us04_c_7Aeq5tdTR36iOseEQ99M4g; Domain=.zoom.us; Path=/; Secure; HttpOnly
+Set-Cookie: _zm_ctaid=rTEjVuTzSEyhWIvUvhRGaw.1590147018581.ed70c79efe46182d67751e336d7e56a5; Domain=.zoom.us; Expires=Fri, 22-May-2020 13:30:18 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: _zm_chtaid=77; Domain=.zoom.us; Expires=Fri, 22-May-2020 13:30:18 GMT; Path=/; Secure; HttpOnly
+Strict-Transport-Security: max-age=31536000
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: strict-origin-when-cross-origin
+
+
+[14328:7360:2020-5-22 15:30:18.51] [process_requst] End for url:https://us04web.zoom.us/conf/launch, return code:200, Error:0, Response content size:2190
+[14328:4592:2020-5-22 15:30:18.98] [client_has_installed_app] found path:
+[14328:4592:2020-5-22 15:30:18.98]  ***NULL-POINTER-PLACEHOLDER***
+[14328:4592:2020-5-22 15:30:18.98] [param_query_local_path] path is: C:\Users\akram\AppData\Roaming\Zoom\ZoomDownload\ dir create response : 1 system error: 1008
+[14328:4592:2020-5-22 15:30:18.98] [downloader_run] State:0
+[14328:11324:2020-5-22 15:30:18.98] [process_requst] start, url:https://us04web.zoom.us/client/latest/Installer.exe
+[14328:4592:2020-5-22 15:30:18.98] [client_has_installed_app] found path:
+[14328:4592:2020-5-22 15:30:18.98]  ***NULL-POINTER-PLACEHOLDER***
+[14328:11324:2020-5-22 15:30:19.343] [req_state_read_status_code] zHttpQueryInfo complete, status:200
+[14328:11324:2020-5-22 15:30:19.343] [req_state_read_status_code] zHttpQueryInfo complete, status:200 Error: 0
+[14328:11324:2020-5-22 15:30:19.483] [read_response_file] Status Code:200, content length: 626520, total read: 626520, error code: 0
+[14328:11324:2020-5-22 15:30:19.655] [process_requst] End for url:https://us04web.zoom.us/client/latest/Installer.exe, return code:200, Error:0, Response content size:0
+[14328:4592:2020-5-22 15:30:19.692] [handle_download_job_done] Index: 1 Curr index: 1 StatusCode: 200 Error: 0 Response is Empty. 
+[14328:11324:2020-5-22 15:30:19.881] [process_requst] start, url:https://us04web.zoom.us/client/latest/Zoom.msi
+[14328:11324:2020-5-22 15:30:20.740] [req_state_read_status_code] zHttpQueryInfo complete, status:200
+[14328:11324:2020-5-22 15:30:20.740] [req_state_read_status_code] zHttpQueryInfo complete, status:200 Error: 0
+[14328:11324:2020-5-22 15:30:23.750] [read_response_file] Status Code:200, content length: 11552306, total read: 11552306, error code: 0
+[14328:11324:2020-5-22 15:30:24.351] [process_requst] End for url:https://us04web.zoom.us/client/latest/Zoom.msi, return code:200, Error:0, Response content size:0
+[14328:4592:2020-5-22 15:30:24.394] [handle_download_job_done] Index: 2 Curr index: 2 StatusCode: 200 Error: 0 Response is Empty. 
+[14328:4592:2020-5-22 15:30:24.425] C:\Users\akram\AppData\Roaming\Zoom\ZoomDownload\Installer.exe
+[14328:4592:2020-5-22 15:30:24.425] ZInstaller --conf.mode=silent --ipc_wnd=526602
+[14328:4592:2020-5-22 15:30:25.277] [launch_silent_install] Installer process created, result:42
+[14328:4592:2020-5-22 15:30:38.450] C:\Users\akram\AppData\Roaming\Zoom\bin\Zoom.exe
+[14328:4592:2020-5-22 15:30:38.481] client_launch_app: 
+[14328:4592:2020-5-22 15:30:38.481] C:\Users\akram\AppData\Roaming\Zoom\bin\Zoom.exe
+[14328:4592:2020-5-22 15:30:38.481] "--url=zoommtg://win.launch?h.domain=us04web.zoom.us&h.path=start&confid=dXNzPWhSMjcwVGc3c0JrUkhkQ2RzUjZFQV85NlJkNlhFNk8zekNnWDVQRU96MUcwVUhpUUZwNHBwaDFlSmxQS0tQOU5LdHJXJnphaz1leUo2YlY5emEyMGlPaUo2YlY5dk1tMGlMQ0poYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKaGRXUWlPaUpqYkdsbGJuUWlMQ0oxYVdRaU9pSTJjVjkzVVRWTVdGRnJlVlJqWkY4MVlYSlNla3QzSWl3aWFYTnpJam9pZDJWaUlpd2ljM1I1SWpveE1EQXNJbmRqWkNJNkluVnpNRFFpTENKamJIUWlPakFzSW5OMGF5STZJa0ZTVG5aQ1lqRXRNbXBFZW14Wk1VUTNVWHBsTm14ek1FbGpkRFE0VjAxc2JVOTBOM2RPV25CUE5uY3VRbWRWWjFJd1NteFpiRTVVVDBack1WWXdNV0ZSTWtaYVVsWlNTRlZYWkVWV1ZGb3pZbnBPU2xSRVRYcGlNRnBCVG1wRk5VMUVaR3BaVkdSdFRsZFdhRTVFUm1sTlZHaHRXbXBLYlU0eVJUUk5hbFY0V2xSQmVscFVWWGhhVkZFeVQxUm5kMDVVWkd0WlYwMHlXa2RXYlU1cVFUUk5lbEY1VFZkSmVGbHFRbTFaZWtrMVQxRkJUVTB3VGtOUldGWjJZVlpzVkUwelRUbEJRVkl4WTNwQk1DSXNJbVY0Y0NJNk1UVTVNREUwTnpnNU5Td2lhV0YwSWpveE5Ua3dNVFEyT1RrMUxDSmhhV1FpT2lJNVRuWnFTRkZLUTFSeFIzQkZTMk5DU2twRU1rWlJJaXdpWTJsa0lqb2lJbjAua0FVdDZ2cExPaVFFT0pGT1lEblNnbEEyVGZBc1dNaVBXMVhaaFlGSzJpMCZ0aWQ9OWQ3OTc4MTEyNzlmNDk2ZTgyZTNkOTZiNGUzNGRhZTAmZW1haWw9YWtyYW03ODc4NyU0MGdtYWlsLmNvbQ%3D%3D&mcv=0.92.11227.0929&uname=Ahmed%20Akram&stype=100&zc=0&sid=6q_wQ5LXQkyTcd_5arRzKw&token=ARNvBb1-2jDzlY1D7Qze6ls0Ict48WMlmOt7wNZpO6w.BgUgR0JlYlNTOFk1V01aQ2FZRVRHUWdEVTZ3bzNJTDMzb0ZANjE5MDdjYTdmNWVhNDFiMThmZjJmN2E4MjUxZTAzZTUxZTQ2OTgwNTdkYWM2ZGVmNjA4MzQyMWIxYjBmYzI5OQAMM0NCQXVvaVlTM3M9AAR1czA0&uid=6q_wQ5LXQkyTcd_5arRzKw&browser=chrome&action=start&confno=74817319332"
+[14328:4592:2020-5-22 15:30:39.44] [client_launch_app] Zoom app process created, result:42
+[14328:4592:2020-5-22 15:30:39.128] Main End

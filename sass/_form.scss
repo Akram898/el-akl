@@ -1,0 +1,167 @@
+#form-body {
+  background-image: linear-gradient($primary-color, #444444);
+  background-size: cover;
+  //   &::after {
+  //     content: "";
+  //     background-color: rgba($primary-color, 0.5);
+  //     position: absolute;
+  //     top: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     z-index: -1;
+  //   }
+
+  /* Style the form */
+  #regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    padding: 40px;
+    width: 80%;
+    min-width: 300px;
+    border: 2px solid $primary-color;
+    box-shadow: 0.1rem 0.1rem 0.4rem #eba4a4;
+    .steps {
+      text-align: right;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    hr {
+      margin: 25px 0 20px 0;
+    }
+    h1 {
+      font-size: 34px;
+      text-align: left;
+      padding-bottom: 9px;
+      color: $primary-color;
+    }
+    p {
+      font-size: 15px;
+      text-align: left;
+      color: #8d8585;
+    }
+    /* Style the input fields */
+    input {
+      padding: 7px 10px;
+      width: 100%;
+      font-size: 17px;
+
+      border: 1px solid #aaaaaa;
+    }
+
+    /* Mark input boxes that gets an error on validation: */
+    input.invalid {
+      background-color: #ffdddd;
+    }
+
+    /* Hide all steps by default: */
+    .tab {
+      display: none;
+    }
+
+    .btn-nxt-prev {
+      margin-top: 2%;
+      padding: 11px 25px;
+      background-color: $primary-color;
+      color: white;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: #aaaaaa;
+        color: $primary-color;
+
+        @include easeOut;
+      }
+    }
+
+    /* Make circles that indicate the steps of the form: */
+    .step {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbbbbb;
+      border: none;
+      border-radius: 50%;
+      display: inline-block;
+      opacity: 0.5;
+    }
+
+    /* Mark the active step: */
+    .step.active {
+      opacity: 1;
+    }
+
+    /* Mark the steps that are finished and valid: */
+    .step.finish {
+      background-color: #4caf50;
+    }
+    #tab2 {
+      h4 {
+        padding: 20px 0 15px 0;
+      }
+
+      .cond {
+        color: $secondary-color;
+        font-size: 16px;
+        font-weight: 450;
+        i {
+          color: $primary-color;
+          font-size: 20px;
+          padding: 2px 5px 0 0;
+        }
+      }
+      label {
+        font-size: 16px;
+      }
+      textarea {
+        margin-bottom: 14px;
+      }
+    }
+
+    #tab3 {
+      h1 {
+        font-size: 29px;
+        padding-bottom: 15%;
+      }
+      a {
+        font-family: "Courgette", cursive;
+        text-decoration: none;
+        color: $primary-color;
+        font-size: 19px;
+        margin: 0 0;
+      }
+      .img-logo {
+        width: 50px;
+        height: 50px;
+        padding-right: 5px;
+      }
+      h4 {
+        padding: 14% 0 0 0;
+      }
+    }
+
+    #tab4 {
+      hr {
+        padding: 2% 0 2% 0;
+      }
+      h4 {
+        padding: 7% 0 0 0;
+      }
+    }
+    .submit-btn {
+      background-color: green;
+    }
+  }
+
+  #banner-section {
+    h1 {
+      font-size: 35px;
+      color: wheat;
+      padding: 10% 0 0 0;
+    }
+    p {
+      font-size: 19px;
+      font-weight: bold;
+      color: white;
+    }
+  }
+}

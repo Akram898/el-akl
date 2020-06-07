@@ -1,0 +1,50 @@
+#leon-body {
+  #cart-nav {
+    background: rgba($primary-color, 0.8) !important;
+    .btn {
+      margin: 7px 15px;
+    }
+  }
+  .show-cart li {
+    display: flex;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .card-img-top {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+  }
+  #home {
+    background-image: url("../img/plate.jpg");
+    background-size: cover;
+    background-position: center;
+
+    .headline-btn {
+      border: white 1px solid;
+    }
+  }
+  #shadow {
+    background: rgba($primary-color, 0.2);
+  }
+
+  #main-meal {
+    margin: 4% 7%;
+    p {
+      padding-top: 19%;
+    }
+    .card-style {
+      h4 {
+        font-size: 17px;
+        padding-bottom: 5px !important;
+      }
+      p {
+        padding-top: 1px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  //*********new cart thing***********
+}

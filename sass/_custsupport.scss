@@ -1,0 +1,65 @@
+#supportform {
+  h1 {
+    font-size: 25px !important;
+  }
+  display: block;
+  position: sticky !important;
+  padding: 5%;
+  margin: 7%;
+  border: 2px #fff solid;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.4rem rgb(223, 211, 211);
+  input,
+  textarea,
+  select {
+    margin: 5px 0 20px 0;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgb(27, 25, 25);
+  }
+  label {
+    padding-bottom: 2px;
+  }
+  .btn {
+    padding: 10px 20%;
+    background-color: $primary-color;
+  }
+}
+#support {
+  h1 {
+    color: $primary-color;
+    text-align: center;
+    padding: 5% 0 2px 0;
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .asked {
+    border-top: 1px $secondary-color solid;
+    padding-bottom: 2%;
+    width: 50%;
+    margin-left: 20%;
+  }
+  hr {
+    border-top: 1px rgba(235, 142, 142, 0.74) solid;
+    padding-bottom: 2%;
+  }
+}
+#support-section {
+  background-image: url(/img/BTC7.jpg);
+  background-position: center top;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  h1 {
+    padding-top: 7%;
+  }
+  h2 {
+    font-size: 25px;
+
+    line-height: 40px;
+    color: #fff;
+    padding-top: 2%;
+    margin-bottom: 4%;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-shadow: 0.1rem 0.1rem 0.7rem black;
+  }
+}

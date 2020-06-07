@@ -1,0 +1,339 @@
+#restaurant-body {
+  #restaurant-home-section {
+    background-image: url("../img/bg-rest.jpg") !important;
+    background-position: fit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  #shadow {
+    background-image: linear-gradient(rgba(85, 3, 3, 0.1));
+  }
+
+  .site-content {
+    .site-title {
+      animation: yourAnimation 1s forwards 0.5s ease-in;
+      font-size: 26px;
+      line-height: 40px;
+      color: #fff;
+      padding: 19% 0 5% 15%;
+      margin-bottom: 4%;
+      text-align: left;
+      font-weight: 350;
+      letter-spacing: 0.1rem;
+      text-shadow: 0.1rem 0.1rem 0.7rem black;
+    }
+
+    #restaurant-form {
+      background: white;
+      padding: 4%;
+      border: 2px solid $primary-color;
+      border-radius: 5px;
+      margin: 5% 10% 5% 10%;
+      box-shadow: 0.1rem 0.1rem 0.4rem rgb(169, 169, 216);
+      h1 {
+        text-align: center;
+        color: black;
+
+        font-size: 22px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+      }
+
+      .input1 {
+        padding: 20px 20px;
+
+        border-radius: 0;
+        margin-bottom: 11px;
+
+        font-size: 17px;
+      }
+      #emailInput {
+        padding: 20px 20px;
+
+        border-radius: 0;
+        margin-bottom: 11px;
+
+        font-size: 17px;
+      }
+      .form-check-label {
+        font-family: "Courgette", cursive;
+        font-size: 15px;
+        color: blanchedalmond;
+      }
+      .btn {
+        background: $primary-color;
+        color: white;
+        padding: 13px 42%;
+        border: solid 1px $primary-color;
+        border-radius: 0;
+        margin-bottom: 11px;
+
+        font-size: 14px;
+      }
+    }
+    .btn-down {
+      margin: 0 0 8% 0;
+      border-radius: 50%;
+    }
+  }
+
+  //===============End Banner-----------------------------
+
+  // ----------------------Start Portfolio Page-----------------------------
+
+  // ----------------------Start Portfolio Page-----------------------------
+  #restaurant-portfolio {
+    margin: 5% 0;
+    h1 {
+      font-size: 24px;
+      text-transform: uppercase;
+      padding: 14% 0 2px 0;
+      color: $secondary-color;
+    }
+    hr {
+      border-top: 2px solid $primary-color;
+
+      padding-bottom: 1%;
+      width: 15%;
+    }
+    p {
+      padding-bottom: 2%;
+      width: 500px;
+      font-weight: 400;
+      padding-right: 7%;
+      font-size: 15px;
+    }
+    .btn {
+      margin-bottom: 7%;
+
+      color: #fff;
+      background-color: $primary-color;
+      border-radius: 0;
+      font-size: 15px;
+      padding: 10px 25px;
+      border-color: $primary-color;
+    }
+    .img-class {
+      // background-image: url("../img/chef 6.jpg");
+      // background-size: cover;
+      // background-position: center;
+      // margin: 4px 0;
+    }
+    img {
+      width: 90%;
+    }
+  }
+
+  // -----------------------End Portfolio Page----------------------------
+
+  // -----------------------Start Services Section----------------------------
+
+  #services-section-restaurant {
+    margin: 5% 0;
+    padding: 0 8%;
+    background: #f7f7f7;
+    img {
+      width: 650px;
+      height: 600px;
+      display: block;
+      padding: 10% 18% 10% 0;
+    }
+
+    h1 {
+      padding: 28% 0 5px 0;
+      font-size: 24px;
+      text-transform: uppercase;
+      padding-bottom: 2px;
+    }
+    hr {
+      border-top: 2px solid $primary-color;
+
+      padding-bottom: 2%;
+      width: 20%;
+    }
+    p {
+      padding-bottom: 4%;
+      font-weight: 400;
+      font-size: 15px;
+      width: 400px;
+    }
+    .btn {
+      margin-bottom: 7%;
+      color: #fff;
+      background-color: $primary-color;
+      border-radius: 0;
+      font-size: 15px;
+      padding: 10px 25px;
+      border-color: $primary-color;
+    }
+  }
+
+  //**************End Services****************************
+
+  //**************Start About*********************************
+  #howitworks {
+    background: #f7f7f7;
+
+    padding: 5% 8%;
+    h2 {
+      padding-bottom: 5%;
+      color: $primary-color;
+    }
+
+    .how-item {
+      display: inline-block;
+
+      background: white;
+      width: 300px;
+      height: 350px;
+      h1 {
+        color: $primary-color;
+        padding: 8% 0;
+      }
+      img {
+        width: 35%;
+      }
+      p {
+        font-size: 25px;
+        color: gray;
+        padding: 11% 0 8% 0;
+      }
+    }
+    .arrow {
+      float: right;
+      display: block;
+      display: inline-block;
+      margin-top: 50%;
+      i {
+        color: $primary-color;
+        font-size: 25px;
+      }
+    }
+    // img {
+    //   width: 100%;
+    //   height: 400px;
+    //   padding: 5% 0 10% 0;
+    // }
+    // h1 {
+    //   padding: 10% 0 5px 0;
+    //   font-size: 28px;
+    //   text-transform: uppercase;
+    //   padding-bottom: 2px;
+    // }
+    // hr {
+    //   border-top: 2px solid $primary-color;
+
+    //   padding-bottom: 2%;
+    //   width: 15%;
+    // }
+    // p {
+    //   padding-bottom: 4%;
+    //   font-weight: 400;
+    // }
+    // .btn {
+    //   color: #fff;
+    //   background-color: $primary-color;
+    //   border-radius: 0;
+    //   font-size: 15px;
+    //   padding: 10px 25px;
+    //   border-color: $primary-color;
+    // }
+    .btn-up {
+      border-radius: 50%;
+      padding: 10px 10px;
+      margin-bottom: -150px;
+      background-color: $primary-color;
+    }
+  }
+  //**************End About*********************************
+
+  @media screen and (max-width: 500px) {
+    #services-section-restaurant {
+      margin: 0 0;
+      padding: 0 0 0 0;
+      background: #f7f7f7;
+      img {
+        width: 100%;
+        height: 400px;
+        display: 0;
+        padding: 10%;
+      }
+
+      h1 {
+        padding: 28% 0 5px 0;
+        font-size: 29px;
+        text-transform: uppercase;
+        padding-bottom: 2px;
+      }
+      hr {
+        border-top: 2px solid $primary-color;
+
+        padding-bottom: 2%;
+        width: 20%;
+      }
+      p {
+        padding-bottom: 4%;
+        margin-right: 5%;
+        font-weight: 400;
+        padding-right: 7%;
+        font-size: 15px;
+        width: 100%;
+      }
+      .btn {
+        margin-bottom: 7%;
+
+        background-color: $primary-color;
+        border-radius: 0;
+        font-size: 15px;
+        padding: 10px 25px;
+        border-color: $primary-color;
+      }
+    }
+
+    #restaurant-portfolio {
+      margin: 5% 0;
+      h1 {
+        font-size: 24px;
+        text-transform: uppercase;
+        padding: 14% 0 2px 0;
+        color: $secondary-color;
+      }
+      hr {
+        border-top: 2px solid $primary-color;
+
+        padding-bottom: 1%;
+        width: 15%;
+      }
+      p {
+        padding-bottom: 2%;
+        width: 100%;
+        font-weight: 400;
+        padding-right: 7%;
+        font-size: 15px;
+      }
+      .btn {
+        margin-bottom: 7%;
+
+        color: #fff;
+        background-color: $primary-color;
+        border-radius: 0;
+        font-size: 15px;
+        padding: 10px 25px;
+        border-color: $primary-color;
+      }
+      .img-class {
+        // background-image: url("../img/chef 6.jpg");
+        // background-size: cover;
+        // background-position: center;
+        // margin: 4px 0;
+      }
+      img {
+        width: 90%;
+        margin-top: 20%;
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+body {
+  background-image: rgb(189, 177, 177);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-add-cart {
+  position: absolute;
+  left: 15px;
+  top: 0px;
+}
+
+#thefood .price {
+  color: #9e00c5;
+  font-size: 20px;
+}
+.item {
+  margin-bottom: 2%;
+}
+#thefood img {
+  border: 1px solid #9e00c5;
+  border-radius: 10px 0;
+  width: 250px;
+  height: 220px;
+}
+
+#thefood h2 {
+  font-size: 23px;
+}
+
+.btn-info {
+  background: #b195b8 !important;
+}
+nav {
+  font-family: "Salsa", cursive;
+  height: 80px;
+  position: fixed !important;
+}
+
+.navbar-brand img {
+  width: 35px;
+}
+.navbar-brand .logo-txt {
+  font-family: "Courgette", cursive;
+  color: #9e00c5;
+  font-size: 25px;
+}
+
+nav .btn {
+  color: #e0e0e0a6;
+  background-color: #d500f9;
+  color: #fff;
+  border: 1px solid #d500f9;
+
+  border-radius: 20px;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+nav .btn:hover {
+  background-color: #9e00c5 !important;
+  color: white !important;
+}
+
+footer {
+  width: 100%;
+  margin: 0;
+  padding: 8% 5% 4% 5%;
+  background: #1a1a1a;
+  color: #fff;
+}
+footer h6 {
+  padding-left: 4%;
+  font-weight: 200;
+  font-size: 15px;
+  color: #fff;
+}
+footer a {
+  color: rgb(219, 219, 219);
+}
+footer a:hover {
+  text-decoration: none;
+
+  color: #fff;
+}
+footer i {
+  margin: 4% 5px 1% 0;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #333333;
+  background-color: #fff;
+}
+footer i:hover {
+  color: #fff;
+  background-color: #9e00c5;
+  transition: 0.4s;
+}
+footer h5 {
+  font-size: 15px;
+  padding-top: 2%;
+
+  font-weight: 40;
+}
+
+#banner {
+  background-image: url("../img/BTC3.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#banner h1 {
+  padding: 15% 0 2% 0;
+  font-size: 48px;
+  font-family: "Salsa", cursive;
+  line-height: 40px;
+  color: black;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-shadow: 0.1rem 0.1rem 0.4rem black;
+}
+#banner p {
+  padding: 0 0 2% 0;
+  font-size: 20px;
+  font-family: "Salsa", cursive;
+  line-height: 40px;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-shadow: 0.1rem 0.1rem 0.4rem black;
+}
+#banner .shadow {
+  background: rgb(189, 177, 177, 0.5);
+}
+#banner .btn-up {
+}
+
+#banner .btn-up-a {
+  color: #e0e0e0a6;
+  background-color: #9e00c5;
+  color: #fff;
+  border: 1px solid #9e00c5;
+  padding: 17px 20px;
+  border-radius: 50%;
+  margin-bottom: 11%;
+}
+#banner .btn-up-a:hover {
+  background: #b195b8;
+}

@@ -1,0 +1,99 @@
+#orders-body {
+  nav {
+    background-color: #f7f7f7 !important;
+    .logo-txt {
+      color: $primary-color !important;
+    }
+    a {
+      color: $primary-color !important;
+      &:hover {
+        color: wheat !important;
+      }
+    }
+    .btn {
+      background-color: $primary-color;
+      color: #fff !important;
+      &:hover {
+        color: $primary-color !important;
+      }
+    }
+  }
+  .btn-up {
+    border-radius: 50%;
+    background-color: $primary-color;
+    margin-top: 15px;
+  }
+}
+
+#orders-main {
+  .meals-choice {
+    background: #f7f7f7;
+    z-index: 2;
+  }
+  #search {
+    padding: 4% 4% 4% 0;
+    input {
+      padding: 0 4% 0 20px;
+      width: 90%;
+      font-weight: bold;
+      color: $primary-color;
+      text-align: left;
+      border: 2px #f7f7f7 solid;
+      box-shadow: 0.1rem 0.1rem 0.4rem $primary-color;
+    }
+    button {
+      color: $primary-color;
+      border: $primary-color 1px solid;
+      &:hover {
+        background-color: $primary-color !important;
+        color: #fff !important;
+      }
+    }
+  }
+
+  img {
+    width: 170px;
+    height: 170px;
+  }
+
+  .menu-item {
+    border: 3px #f7f7f7 solid;
+    padding: 10px 10px 10px 0;
+    margin: 8px;
+    box-shadow: 0.1rem 0.1rem 0.8rem rgb(169, 169, 216);
+    background: white;
+    color: $secondary-color;
+    &:hover {
+      text-decoration: none;
+      border-color: $primary-color;
+      color: $primary-color;
+      opacity: 0.9;
+      transition: ease-out 0.4s;
+    }
+    h1 {
+      font-size: 25px;
+    }
+    .grade {
+      border: $primary-color 1px solid;
+      padding: 5px 10px;
+      border-radius: 50%;
+      font-size: 15px;
+      margin: 0 0 0 80px;
+    }
+    .firs-taste {
+      color: $primary-color;
+      border: $primary-color 1px solid;
+      font-size: 10px;
+      padding: 4px;
+      margin-bottom: 20px;
+    }
+    .timings {
+      margin-top: 30px;
+    }
+  }
+}
+.sticky iframe {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
